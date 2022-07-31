@@ -2,13 +2,17 @@
 
 Julia tools for the Cosmos SDK and interacting with Blockchains built on Tendermint.
 
+Relies on `PyCall` and thus you must have Python3 installed and PyCall ENV properly set.
+
 ## Installing
 ```julia
-pkg> add cosmos
+pkg> add https://github.com/schnetzlerjoe/cosmos.jl
 ```
 
 ## Client
 ```julia
+using cosmos
+
 client = NewClient(rpc="")
 ```
 
